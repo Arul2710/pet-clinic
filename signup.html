@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Pet Vaccination & Microchipping Clinic</title>
+  <meta name="description" content="Create your pet care account to manage vaccinations, appointments, microchipping records, and health reports.">
+  <link rel="canonical" href="https://petclinic.com/signup">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/google-fonts.css">
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Plus Jakarta Sans','sans-serif']}}}}</script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
+
+  <!-- Simple Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+          <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-400 rounded-full flex items-center justify-center shadow-md">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="17" r="5" />
+              <circle cx="6" cy="10" r="2.2" />
+              <circle cx="18" cy="10" r="2.2" />
+              <circle cx="9" cy="4.5" r="2" />
+              <circle cx="15" cy="4.5" r="2" />
+            </svg>
+          </div>
+          <span class="text-lg font-bold gradient-text">PetClinic</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="darkModeToggle" class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all" title="Toggle Dark Mode">
+            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </button>
+          <button id="ltrToggle" class="relative w-[68px] h-7 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-blue-500" aria-label="Switch to RTL" title="Switch to RTL">
+            <span class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
+            <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 opacity-0 transition-opacity duration-300"></span>
+            <span class="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
+              <span id="ltrToggleLtr" class="transition-colors duration-300">LTR</span>
+              <span id="ltrToggleRtl" class="transition-colors duration-300">RTL</span>
+            </span>
+            <span id="ltrToggleKnob" class="absolute top-0.5 left-0.5 w-6 h-6 bg-white dark:bg-gray-200 rounded-full shadow-md transition-transform duration-300"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Signup Section -->
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 py-12 bg-gradient-to-br from-teal-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <div class="absolute inset-0 bg-grid opacity-30 dark:opacity-10"></div>
+  <div class="absolute top-20 -right-20 w-80 h-80 bg-teal-200/40 dark:bg-teal-800/20 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-200/40 dark:bg-blue-800/20 rounded-full blur-3xl"></div>
+
+  <div class="relative w-full max-w-md mx-auto px-4 py-8" data-aos="fade-up" data-aos-duration="800">
+    <div class="glass-card bg-white/70 dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/20 dark:border-gray-700/30">
+      
+      <!-- Header -->
+      <div class="text-center mb-8">
+        
+        <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Create Your Account</h1>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Register to access vaccination schedules, appointments, and health reports.</p>
+      </div>
+
+      <!-- Signup Form (Strictly Vertical Stack Layout) -->
+      <form id="signupForm" class="space-y-5" novalidate>
+        
+        <!-- 1. Full Name (Keela varra maari direct vertical alignment) -->
+        <div>
+          <label for="fullName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Full Name</label>
+          <input type="text" id="fullName" placeholder="John Doe" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-white">
+          <p class="text-red-500 text-xs mt-1 hidden" id="fullNameError">Please enter your name</p>
+        </div>
+
+        <!-- 2. Email Address -->
+        <div>
+          <label for="signupEmail" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Email Address</label>
+          <input type="email" id="signupEmail" placeholder="you@example.com" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-white">
+          <p class="text-red-500 text-xs mt-1 hidden" id="signupEmailError">Please enter a valid email</p>
+        </div>
+
+        <!-- 3. Password Box -->
+        <div>
+          <label for="signupPassword" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Password</label>
+          <div class="relative">
+            <input type="password" id="signupPassword" placeholder="Min. 6 characters" class="w-full pr-12 px-4 py-3 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-white">
+            <button type="button" id="toggleSignupPassword" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+              </svg>
+            </button>
+          </div>
+          <p class="text-red-500 text-xs mt-1 hidden" id="signupPasswordError">Password must be at least 6 characters</p>
+          
+          <!-- Password Strength Element Indicators -->
+          <div class="mt-2">
+            <div class="h-1 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full w-0 transition-all duration-300" id="strengthBar"></div>
+            </div>
+            <p class="text-[11px] text-gray-500 mt-1" id="strengthText"></p>
+          </div>
+        </div>
+
+        <!-- 4. Confirm Password Box -->
+        <div>
+          <label for="confirmPassword" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Repeat your password" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all text-gray-900 dark:text-white">
+          <p class="text-red-500 text-xs mt-1 hidden" id="confirmPasswordError">Passwords do not match</p>
+        </div>
+
+        <!-- Submit Registration Button -->
+        <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white font-semibold rounded-xl text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:-translate-y-0.5" id="signupBtn">
+          <span>Create Account</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+          </svg>
+        </button>
+
+        <!-- Divider Line Segment -->
+        <div class="relative my-6">
+          <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200 dark:border-gray-700"></div></div>
+          <div class="relative flex justify-center"><span class="bg-white dark:bg-gray-800 px-4 text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wider">Or sign up with</span></div>
+        </div>
+
+        <!-- Social Oauth Row -->
+        <div class="grid grid-cols-2 gap-3">
+          <button type="button" class="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all">
+            <svg class="w-5 h-5" viewBox="0 0 24 24"><path fill="#EA4335" d="M5.266 9.765A7.077 7.077 0 0112 4.909c1.69 0 3.218.6 4.418 1.582L19.91 3C17.782 1.145 15.054 0 12 0 7.27 0 3.198 2.932 1.333 7.108l3.933 2.657z"/><path fill="#34A853" d="M16.04 18.013c-1.09.703-2.474 1.078-4.04 1.078a7.077 7.077 0 01-6.723-4.823l-3.933 2.657A11.965 11.965 0 0012 24c2.933 0 5.735-1.043 7.834-3l-3.794-2.987z"/><path fill="#4A90E2" d="M19.834 21c2.195-2.048 3.62-5.096 3.62-9 0-.71-.109-1.473-.272-2.182H12v4.637h6.436a5.5 5.5 0 01-2.396 3.558l3.794 2.987z"/><path fill="#FBBC05" d="M5.266 14.765a7.08 7.08 0 01-.01-1.53l-3.933-2.657c-.204.676-.323 1.388-.323 2.127 0 2.125.663 4.095 1.813 5.784l2.453-3.724z"/></svg>
+            <span class="text-xs sm:text-sm">Google</span>
+          </button>
+          <button type="button" class="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all">
+            <svg class="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span class="text-xs sm:text-sm">Facebook</span>
+          </button>
+        </div>
+
+        <!-- Footer Redirect -->
+        <p class="text-center text-sm text-gray-600 dark:text-gray-400 pt-2">
+          Already have an account? <a href="login.html" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Sign in</a>
+        </p>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
+
+
