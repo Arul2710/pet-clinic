@@ -47,11 +47,11 @@
       if (strength <= 1) {
         strengthBar.classList.add('strength-weak');
         strengthText.textContent = 'Weak';
-        strengthText.className = 'text-xs text-red-500 mt-1';
+        strengthText.className = 'text-xs text-blue-600 mt-1';
       } else if (strength <= 2) {
         strengthBar.classList.add('strength-fair');
         strengthText.textContent = 'Fair';
-        strengthText.className = 'text-xs text-yellow-500 mt-1';
+        strengthText.className = 'text-xs text-blue-500 mt-1';
       } else if (strength <= 3) {
         strengthBar.classList.add('strength-good');
         strengthText.textContent = 'Good';
@@ -59,7 +59,7 @@
       } else {
         strengthBar.classList.add('strength-strong');
         strengthText.textContent = 'Strong';
-        strengthText.className = 'text-xs text-green-500 mt-1';
+        strengthText.className = 'text-xs text-blue-600 mt-1';
       }
     });
   }
@@ -73,11 +73,11 @@
   }
 
   function showError(el, errEl) {
-    if (el) { el.classList.add('border-red-500', 'dark:border-red-400'); }
+    if (el) { el.classList.add('border-blue-500', 'dark:border-blue-400'); }
     if (errEl) { errEl.classList.remove('hidden'); }
   }
   function clearError(el, errEl) {
-    if (el) { el.classList.remove('border-red-500', 'dark:border-red-400'); }
+    if (el) { el.classList.remove('border-blue-500', 'dark:border-blue-400'); }
     if (errEl) { errEl.classList.add('hidden'); }
   }
 

@@ -12,7 +12,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="assets/css/google-fonts.css">
-  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Plus Jakarta Sans','sans-serif']}}}}</script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{'brand-blue':{50:'#EFF6FF',100:'#DBEAFE',200:'#BFDBFE',300:'#93C5FD',400:'#60A5FA',500:'#3B82F6',600:'#2563EB',700:'#1D4ED8',800:'#1E40AF',900:'#1E3A8A'},fontFamily:{sans:['Inter','sans-serif'],display:['Plus Jakarta Sans','sans-serif']}}}}</script>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
 
@@ -21,7 +21,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-          <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-400 rounded-full flex items-center justify-center shadow-md">
+          <div class="w-10 h-10 bg-gradient-to-br from-brand-blue-600 to-brand-blue-300 rounded-full flex items-center justify-center shadow-md">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="17" r="5" />
               <circle cx="6" cy="10" r="2.2" />
@@ -39,7 +39,7 @@
           </button>
           <button id="ltrToggle" class="relative w-[68px] h-7 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-blue-500" aria-label="Switch to RTL" title="Switch to RTL">
             <span class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
-            <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 opacity-0 transition-opacity duration-300"></span>
+            <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-brand-blue-600 to-brand-blue-300 opacity-0 transition-opacity duration-300"></span>
             <span class="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
               <span id="ltrToggleLtr" class="transition-colors duration-300">LTR</span>
               <span id="ltrToggleRtl" class="transition-colors duration-300">RTL</span>
@@ -53,10 +53,10 @@
 
   <!-- Login Section -->
   <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-blue-50 via-white to-brand-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"></div>
     <div class="absolute inset-0 bg-grid opacity-30 dark:opacity-10"></div>
     <div class="absolute top-20 -left-20 w-80 h-80 bg-blue-200/40 dark:bg-blue-800/20 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-teal-200/40 dark:bg-teal-800/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-brand-blue-200/40 dark:bg-brand-blue-800/20 rounded-full blur-3xl"></div>
 
     <div class="relative w-full max-w-md mx-auto px-4 py-8" data-aos="fade-up" data-aos-duration="800">
       <div class="glass-card rounded-3xl p-8 sm:p-10 shadow-2xl">
@@ -75,19 +75,19 @@
               <svg class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               <input type="email" id="email" name="email" placeholder="you@example.com" class="form-input w-full pl-11 pr-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:border-blue-500 dark:focus:border-blue-400 transition-all">
             </div>
-            <p class="text-red-500 text-xs mt-1 hidden" id="emailError">Please enter a valid email address</p>
+            <p class="text-blue-600 text-xs mt-1 hidden" id="emailError">Please enter a valid email address</p>
           </div>
 
           <div>
             <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">Password</label>
             <div class="relative">
               <svg class="w-5 h-5 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              <input type="password" id="password" name="password" placeholder="Password" njnclass="form-input w-full pl-11 pr-12 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:border-blue-500 dark:focus:border-blue-400 transition-all">
+              <input type="password" id="password" name="password" placeholder="Password" class="form-input w-full pl-11 pr-12 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-sm focus:border-blue-500 dark:focus:border-blue-400 transition-all">
               <button type="button" id="togglePassword" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
               </button>
             </div>
-            <p class="text-red-500 text-xs mt-1 hidden" id="passwordError">Password must be at least 6 characters</p>
+            <p class="text-blue-600 text-xs mt-1 hidden" id="passwordError">Password must be at least 6 characters</p>
           </div>
 
           <div class="flex items-center justify-between">
@@ -108,14 +108,18 @@
             <div class="relative flex justify-center"><span class="bg-white dark:bg-gray-800 px-4 text-sm text-gray-500">Or continue with</span></div>
           </div>
 
-          <div class="grid grid-cols-2 gap-3">
-            <button type="button" class="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+          <div class="grid grid-cols-3 gap-3">
+            <button type="button" class="flex items-center justify-center gap-1 px-2 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
               <svg class="w-5 h-5" viewBox="0 0 24 24"><path fill="#EA4335" d="M5.266 9.765A7.077 7.077 0 0112 4.909c1.69 0 3.218.6 4.418 1.582L19.91 3C17.782 1.145 15.054 0 12 0 7.27 0 3.198 2.932 1.333 7.108l3.933 2.657z"/><path fill="#34A853" d="M16.04 18.013c-1.09.703-2.474 1.078-4.04 1.078a7.077 7.077 0 01-6.723-4.823l-3.933 2.657A11.965 11.965 0 0012 24c2.933 0 5.735-1.043 7.834-3l-3.794-2.987z"/><path fill="#4A90E2" d="M19.834 21c2.195-2.048 3.62-5.096 3.62-9 0-.71-.109-1.473-.272-2.182H12v4.637h6.436a5.5 5.5 0 01-2.396 3.558l3.794 2.987z"/><path fill="#FBBC05" d="M5.266 14.765a7.08 7.08 0 01-.01-1.53l-3.933-2.657c-.204.676-.323 1.388-.323 2.127 0 2.125.663 4.095 1.813 5.784l2.453-3.724z"/></svg>
-              Google
+              <span class="text-xs">Google</span>
             </button>
-            <button type="button" class="flex items-center justify-center gap-2 px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+            <button type="button" class="flex items-center justify-center gap-1 px-2 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
               <svg class="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              Facebook
+              <span class="text-xs">Facebook</span>
+            </button>
+            <button type="button" class="flex items-center justify-center gap-1 px-2 py-3 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span class="text-xs">Apple</span>
             </button>
           </div>
 

@@ -21,6 +21,20 @@
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
             display: ['Plus Jakarta Sans', 'sans-serif']
+          },
+          colors: {
+            'brand-blue': {
+              50: '#EFF6FF',
+              100: '#DBEAFE',
+              200: '#BFDBFE',
+              300: '#93C5FD',
+              400: '#60A5FA',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+              800: '#1E40AF',
+              900: '#1E3A8A',
+            },
           }
         }
       }
@@ -33,53 +47,53 @@
 
   <!-- Hero -->
   <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 dark:from-blue-900 dark:via-blue-800 dark:to-teal-800"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-blue-700 via-brand-blue-600 to-brand-blue-400 dark:from-brand-blue-900 dark:via-brand-blue-800 dark:to-brand-blue-800"></div>
     <div class="absolute inset-0 bg-grid opacity-20"></div>
     <div class="absolute top-20 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-20 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 w-96 h-96 bg-brand-blue-300/20 rounded-full blur-3xl"></div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6"><i class="fas fa-syringe mr-2"></i>Vaccination Services</span>
+          <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6"><i class="fas fa-syringe mr-2 rtl:ml-2 rtl:mr-0"></i>Vaccination Services</span>
           <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            Protect Your Pet with <span class="text-yellow-300">Vaccinations</span>
+            Protect Your Pet with <span class="text-brand-blue-300">Vaccinations</span>
           </h1>
-          <p class="text-lg sm:text-xl text-blue-50/90 mb-8 max-w-xl leading-relaxed">
+          <p class="text-lg sm:text-xl text-brand-blue-50/90 mb-8 max-w-xl leading-relaxed">
             Comprehensive immunization programs tailored to your pet's needs. Our expert veterinarians ensure your furry friends stay healthy and protected against preventable diseases.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="#schedule" class="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300">
-              View Schedule
-              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            <a href="#schedule" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
+              Schedule Vaccination
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7-7V3"/></svg>
             </a>
-            <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-semibold rounded-xl hover:bg-white/30 transition-all duration-300">
-              Book Appointment
+            <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-semibold rounded-xl hover:bg-white/30 hover:-translate-y-1 transition-all duration-300">
+              Book a Consultation
             </a>
           </div>
           <div class="flex items-center gap-8 mt-10 pt-8 border-t border-white/20">
             <div class="text-center">
               <div class="text-3xl font-bold text-white">15K+</div>
-              <div class="text-sm text-blue-100">Pets Vaccinated</div>
+              <div class="text-sm text-brand-blue-100">Pets Vaccinated</div>
             </div>
             <div class="text-center">
               <div class="text-3xl font-bold text-white">12+</div>
-              <div class="text-sm text-blue-100">Years Experience</div>
+              <div class="text-sm text-brand-blue-100">Years Experience</div>
             </div>
             <div class="text-center">
               <div class="text-3xl font-bold text-white">99%</div>
-              <div class="text-sm text-blue-100">Protection Rate</div>
+              <div class="text-sm text-brand-blue-100">Protection Rate</div>
             </div>
           </div>
         </div>
         <div class="relative hidden lg:block" data-aos="fade-left" data-aos-duration="1000">
           <div class="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-            <img src="assets/images/photo-1583511655857-d19b40a7a54e.jpg" alt="Vaccination for pet" class="w-full h-full object-cover">
+            <img src="assets/images/Vaccination 3.jpg" alt="Vaccination for pet" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
           </div>
           <div class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-xl p-4 shadow-xl">
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-                <i class="fas fa-syringe text-blue-600 dark:text-blue-300 text-xl"></i>
+              <div class="w-12 h-12 bg-brand-blue-100 dark:bg-brand-blue-900 rounded-full flex items-center justify-center">
+                <i class="fas fa-syringe text-brand-blue-600 dark:text-brand-blue-300 text-xl"></i>
               </div>
               <div>
                 <div class="text-sm font-semibold text-gray-900 dark:text-white">Safe & Effective</div>
@@ -98,8 +112,8 @@
     
     <!-- Section Header -->
     <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-      <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
-        <i class="fas fa-dog mr-2"></i>Puppy & Dog Vaccines
+      <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">
+        <i class="fas fa-dog mr-2 rtl:ml-2 rtl:mr-0"></i>Puppy & Dog Vaccines
       </span>
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Dog Vaccination Schedule</h2>
       <p class="text-gray-600 dark:text-gray-400 text-lg">Follow this recommended vaccination timeline to keep your dog healthy at every stage of life.</p>
@@ -112,25 +126,33 @@
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
           <img src="assets/images/Vaccination 2.webp" alt="Newborn 6-8 weeks puppy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">6-8 Weeks</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-blue-600 dark:text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#1</div>
+          <div class="absolute top-4 left-4 bg-brand-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">6-8 Weeks</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#1</div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-syringe text-white text-xl"></i>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-syringe text-white text-xl"></i>
+            </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Core Vaccines</h3>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Distemper</strong>  Affects respiratory, GI, and nervous systems.</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Parvovirus</strong>  Severe viral infection causing severe gastrointestinal illness.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Core Vaccines</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Distemper</strong>  Affects respiratory, GI, and nervous systems.</span>
-              </li>
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Parvovirus</strong>  Severe viral infection causing severe gastrointestinal illness.</span>
-              </li>
-            </ul>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -139,21 +161,29 @@
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
           <img src="assets/images/photo-1548199973-03cce0bbc87b.jpg" alt="10-12 weeks playful puppy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">10-12 Weeks</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-blue-600 dark:text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#2</div>
+          <div class="absolute top-4 left-4 bg-brand-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">10-12 Weeks</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#2</div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-syringe text-white text-xl"></i>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-syringe text-white text-xl"></i>
+            </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">DHPP Vaccine</h3>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-brand-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">D</strong>  Distemper</span></li>
+                <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-brand-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">H</strong>  Hepatitis</span></li>
+                <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-brand-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">P</strong>  Parainfluenza</span></li>
+                <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-brand-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">P</strong>  Parvovirus</span></li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">DHPP Vaccine</h3>
-            <ul class="space-y-2">
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">D</strong>  Distemper</span></li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">H</strong>  Hepatitis (Adenovirus)</span></li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">P</strong>  Parainfluenza</span></li>
-              <li class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-check-circle text-blue-500 flex-shrink-0"></i><span><strong class="text-gray-900 dark:text-white">P</strong>  Parvovirus</span></li>
-            </ul>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -162,28 +192,36 @@
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
           <img src="assets/images/Vaccination 1.webp" alt="16-18 weeks older puppy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">16-18 Weeks</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-blue-600 dark:text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#3</div>
+          <div class="absolute top-4 left-4 bg-brand-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">16-18 Weeks</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#3</div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-syringe text-white text-xl"></i>
-          </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Boosters</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">DHPP Booster</strong>  Strengthens puppy immunity.</span>
-              </li>
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Rabies</strong>  First rabies vaccination shot.</span>
-              </li>
-            </ul>
-            <div class="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
-              <span class="inline-flex items-center text-xs text-amber-600 dark:text-amber-400"><i class="fas fa-exclamation-triangle mr-1"></i> Check local legal guidelines.</span>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-syringe text-white text-xl"></i>
             </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Boosters</h3>
+              <ul class="space-y-3 mb-4">
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">DHPP Booster</strong>  Strengthens puppy immunity.</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Rabies</strong>  First rabies vaccination shot.</span>
+                </li>
+              </ul>
+              <div class="mb-4 pt-2 border-t border-gray-200 dark:border-gray-700">
+                <span class="inline-flex items-center text-xs text-blue-600 dark:text-blue-400"><i class="fas fa-exclamation-triangle mr-1"></i> Check local legal guidelines.</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -191,53 +229,69 @@
       <!-- Card 4: 12-16 Months -->
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
-          <img src="assets/images/photo-1517849845537-4d257902454a.jpg" alt="Young adult dog 12 months" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">12-16 Months</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-teal-600 dark:text-teal-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#4</div>
+          <img src="assets/images/Vaccination 4.jpg" alt="Young adult dog 12 months" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute top-4 left-4 bg-brand-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">12-16 Months</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#4</div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-teal-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-syringe text-white text-xl"></i>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-400 to-brand-blue-600 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-syringe text-white text-xl"></i>
+            </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Yearly Boosters</h3>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">DHPP Booster</strong>  Annual shot to maintain full immunity.</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Rabies Booster</strong>  Booster after the first initial rabies shot.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Yearly Boosters</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">DHPP Booster</strong>  Annual shot to maintain full immunity.</span>
-              </li>
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Rabies Booster</strong>  Booster after the first initial rabies shot.</span>
-              </li>
-            </ul>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Card 5: Non-Core Vaccines (NEWLY ADDED EXTRA CARD) -->
+      <!-- Card 5: Non-Core Vaccines -->
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
-          <img src="assets/images/photo-1601758228041-f3b2795255f1.jpg" alt="Dogs in social environment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-teal-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Lifestyle Based</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-teal-600 dark:text-teal-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#5</div>
+          <img src="assets/images/Vaccination 5.jpg" alt="Dogs in social environment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute top-4 left-4 bg-brand-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Lifestyle Based</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow">#5</div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-teal-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-shield-alt text-white text-xl"></i>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-400 to-brand-blue-600 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-shield-alt text-white text-xl"></i>
+            </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Non-Core Options</h3>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Bordetella</strong>  Prevents contagious kennel cough.</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Lyme Disease</strong>  Recommended for tick-heavy areas.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Non-Core Options</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Bordetella</strong>  Prevents highly contagious kennel cough in social environments.</span>
-              </li>
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Lyme Disease</strong>  Strongly recommended for dogs in tick-heavy grassy areas.</span>
-              </li>
-            </ul>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -245,26 +299,34 @@
       <!-- Card 6: Every 1-3 Years -->
       <div class="glass-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 relative group flex flex-col">
         <div class="h-48 w-full overflow-hidden relative">
-          <img src="assets/images/photo-1583511655857-d19b40a7a54e.jpg" alt="Healthy adult dog" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Every 1-3 Years</div>
-          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-blue-600 dark:text-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow"><i class="fas fa-infinity"></i></div>
+          <img src="assets/images/Vaccination 6.webp" alt="Healthy adult dog" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute top-4 left-4 bg-brand-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">Every 1-3 Years</div>
+          <div class="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/90 text-brand-blue-600 dark:text-brand-blue-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow"><i class="fas fa-infinity"></i></div>
         </div>
-        <div class="p-6 flex-1 relative">
-          <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
-            <i class="fas fa-syringe text-white text-xl"></i>
+        <div class="p-6 flex-1 relative flex flex-col justify-between">
+          <div>
+            <div class="absolute -top-7 left-6 w-14 h-14 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-xl flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+              <i class="fas fa-syringe text-white text-xl"></i>
+            </div>
+            <div class="pt-6">
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Maintenance</h3>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">DHPP Longterm</strong>  Given every 3 years after series.</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <i class="fas fa-check-circle text-brand-blue-500 mt-0.5 flex-shrink-0"></i>
+                  <span><strong class="text-gray-900 dark:text-white">Rabies Standard</strong>  Periodic shot based on laws.</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-6">
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Maintenance</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">DHPP Longterm</strong>  Given every 3 years after primary puppy series.</span>
-              </li>
-              <li class="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                <i class="fas fa-check-circle text-blue-500 mt-0.5 flex-shrink-0"></i>
-                <span><strong class="text-gray-900 dark:text-white">Rabies Standard</strong>  Periodic shot based on local laws.</span>
-              </li>
-            </ul>
+          <div class="mt-4">
+            <a href="#book" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-brand-blue-600 hover:bg-brand-blue-700 text-white font-medium text-sm rounded-xl transition-colors duration-200 gap-2 shadow-sm">
+              <span>Book Consultation</span>
+              <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -279,8 +341,8 @@
     
     <!-- Section Header -->
     <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
-      <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">
-        <i class="fas fa-cat mr-2"></i>Kitten & Cat Vaccines
+      <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">
+        <i class="fas fa-cat mr-2 rtl:ml-2 rtl:mr-0"></i>Kitten & Cat Vaccines
       </span>
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Cat Vaccination Schedule</h2>
       <p class="text-gray-600 dark:text-gray-400 text-lg">Keep your feline friend protected with this recommended vaccination timeline.</p>
@@ -289,14 +351,14 @@
     <!-- Professional Timeline Container -->
     <div class="relative">
       <!-- Center Vertical Line (Desktop Only) -->
-      <div class="hidden lg:block absolute left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-blue-400 via-teal-400 to-blue-500 -translate-x-1/2"></div>
+      <div class="hidden lg:block absolute left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-brand-blue-400 via-brand-blue-400 to-brand-blue-500 -translate-x-1/2"></div>
       
       <div class="space-y-16 lg:space-y-24">
         
         <!-- Step 1: 6-8 Weeks (Left Card) -->
         <div class="relative flex flex-col lg:flex-row items-center gap-8 lg:gap-0" data-aos="fade-right">
           <!-- Timeline Number Bubble -->
-          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-500 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">1</div>
+          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">1</div>
           
           <div class="w-full lg:w-[calc(50%-45px)] lg:mr-auto">
             <div class="glass-card bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row">
@@ -305,13 +367,13 @@
               </div>
               <div class="p-6 sm:w-2/3 flex flex-col justify-center">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-xs font-bold">6-8 Weeks</span>
+                  <span class="px-3 py-1 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-xs font-bold">6-8 Weeks</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">FVRCP  First Dose</h3>
                 <p class="text-xs text-gray-500 dark:text-gray-400 mb-3 font-semibold">Core combination protection</p>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span><strong>FVR</strong>  Rhinotracheitis (Herpesvirus)</span></li>
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span><strong>C</strong>  Calicivirus & <strong>P</strong>  Panleukopenia</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>FVR</strong>  Rhinotracheitis (Herpesvirus)</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>C</strong>  Calicivirus & <strong>P</strong>  Panleukopenia</span></li>
                 </ul>
               </div>
             </div>
@@ -321,21 +383,21 @@
         <!-- Step 2: 10-12 Weeks (Right Card) -->
         <div class="relative flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-0" data-aos="fade-left">
           <!-- Timeline Number Bubble -->
-          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-500 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">2</div>
+          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">2</div>
           
-          <div class="w-full lg:w-[calc(50%-45px)] lg:ml-auto">
+           <div class="w-full lg:w-[calc(50%-45px)] lg:ml-auto rtl:mr-auto rtl:ml-0">
             <div class="glass-card bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row">
               <div class="sm:w-1/3 h-48 sm:h-auto overflow-hidden">
                 <img src="assets/images/photo-1573865526739-10659fec78a5.jpg" alt="10-12 weeks active kitten" class="w-full h-full object-cover">
               </div>
               <div class="p-6 sm:w-2/3 flex flex-col justify-center">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-300 rounded-full text-xs font-bold">10-12 Weeks</span>
+                  <span class="px-3 py-1 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-xs font-bold">10-12 Weeks</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">FVRCP Booster</h3>
-                <p class="text-xs text-teal-600 dark:text-teal-400 mb-3 font-semibold">Second immunity booster dose</p>
+                <p class="text-xs text-brand-blue-600 dark:text-brand-blue-400 mb-3 font-semibold">Second immunity booster dose</p>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span>Reinforces the primary defense against all three highly contagious respiratory and GI viruses.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span>Reinforces the primary defense against all three highly contagious respiratory and GI viruses.</span></li>
                 </ul>
               </div>
             </div>
@@ -345,7 +407,7 @@
         <!-- Step 3: 14-16 Weeks (Left Card) -->
         <div class="relative flex flex-col lg:flex-row items-center gap-8 lg:gap-0" data-aos="fade-right">
           <!-- Timeline Number Bubble -->
-          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-500 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">3</div>
+          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">3</div>
           
           <div class="w-full lg:w-[calc(50%-45px)] lg:mr-auto">
             <div class="glass-card bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row">
@@ -354,13 +416,13 @@
               </div>
               <div class="p-6 sm:w-2/3 flex flex-col justify-center">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-xs font-bold">14-16 Weeks</span>
+                  <span class="px-3 py-1 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-xs font-bold">14-16 Weeks</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Final Kitten Shots</h3>
-                <p class="text-xs text-blue-600 dark:text-blue-400 mb-3 font-semibold">Critical protection window</p>
+                <p class="text-xs text-brand-blue-600 dark:text-brand-blue-400 mb-3 font-semibold">Critical protection window</p>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span><strong>FVRCP Booster</strong>  3rd and final infant series shot.</span></li>
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5 shrink-0"></i><span><strong>Rabies Shot</strong>  Legally required first standard dose.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>FVRCP Booster</strong>  3rd and final infant series shot.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>Rabies Shot</strong>  Legally required first standard dose.</span></li>
                 </ul>
               </div>
             </div>
@@ -370,22 +432,22 @@
         <!-- Step 4: 12-16 Months (Right Card) -->
         <div class="relative flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-0" data-aos="fade-left">
           <!-- Timeline Number Bubble -->
-          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-500 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">4</div>
+          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 text-white font-bold text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2">4</div>
           
-          <div class="w-full lg:w-[calc(50%-45px)] lg:ml-auto">
+           <div class="w-full lg:w-[calc(50%-45px)] lg:ml-auto rtl:mr-auto rtl:ml-0">
             <div class="glass-card bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row">
               <div class="sm:w-1/3 h-48 sm:h-auto overflow-hidden">
                 <img src="assets/images/photo-1543466835-00a7907e9de1.jpg" alt="Adult cat" class="w-full h-full object-cover">
               </div>
               <div class="p-6 sm:w-2/3 flex flex-col justify-center">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-300 rounded-full text-xs font-bold">12-16 Months</span>
+                  <span class="px-3 py-1 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-xs font-bold">12-16 Months</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Yearly Boosters</h3>
-                <p class="text-xs text-teal-600 dark:text-teal-400 mb-3 font-semibold">Adult immunity cycle initiation</p>
+                <p class="text-xs text-brand-blue-600 dark:text-brand-blue-400 mb-3 font-semibold">Adult immunity cycle initiation</p>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span><strong>FVRCP Booster</strong>  Annual reinforcement dosage.</span></li>
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span><strong>Rabies Booster</strong>  1 year after the initial vaccination.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>FVRCP Booster</strong>  Annual reinforcement dosage.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>Rabies Booster</strong>  1 year after the initial vaccination.</span></li>
                 </ul>
               </div>
             </div>
@@ -395,7 +457,7 @@
         <!-- Step 5: Every 1-3 Years (Left Card) -->
         <div class="relative flex flex-col lg:flex-row items-center gap-8 lg:gap-0" data-aos="fade-up">
           <!-- Timeline Icon Bubble -->
-          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-500 text-white text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2"><i class="fas fa-infinity"></i></div>
+          <div class="hidden lg:flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 text-white text-lg shadow-xl z-30 shrink-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2"><i class="fas fa-infinity"></i></div>
           
           <div class="w-full lg:w-[calc(50%-45px)] lg:mr-auto">
             <div class="glass-card bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row">
@@ -404,13 +466,13 @@
               </div>
               <div class="p-6 sm:w-2/3 flex flex-col justify-center">
                 <div class="flex items-center gap-2 mb-3">
-                  <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-300 rounded-full text-xs font-bold">Every 1-3 Years</span>
+                  <span class="px-3 py-1 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-xs font-bold">Every 1-3 Years</span>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Maintenance Phase</h3>
-                <p class="text-xs text-teal-600 dark:text-teal-400 mb-3 font-semibold">Long-term health monitoring</p>
+                <p class="text-xs text-brand-blue-600 dark:text-brand-blue-400 mb-3 font-semibold">Long-term health monitoring</p>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span><strong>FVRCP</strong> ” Administered every 3 years for adult indoor cats.</span></li>
-                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal-500 mt-0.5 shrink-0"></i><span><strong>Rabies</strong>  Periodic maintenance per state regulations.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>FVRCP</strong> ” Administered every 3 years for adult indoor cats.</span></li>
+                  <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-blue-500 mt-0.5 shrink-0"></i><span><strong>Rabies</strong>  Periodic maintenance per state regulations.</span></li>
                 </ul>
               </div>
             </div>
@@ -422,7 +484,7 @@
 
     <!-- Mobile Info Overlay Hint -->
     <div class="lg:hidden mt-12 text-center" data-aos="fade-up">
-      <p class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-info-circle mr-1"></i> Swipe down through the vertical grid to view your cat's premium vaccine path.</p>
+      <p class="text-xs text-gray-500 dark:text-gray-400"><i class="fas fa-info-circle mr-1 rtl:ml-1 rtl:mr-0"></i> Swipe down through the vertical grid to view your cat's premium vaccine path.</p>
     </div>
 
   </div>
@@ -431,14 +493,14 @@
   <section class="py-20 lg:py-28 bg-white dark:bg-gray-800/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-        <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4"><i class="fas fa-heart mr-2"></i>Why Vaccinate</span>
+        <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4"><i class="fas fa-heart mr-2 rtl:ml-2 rtl:mr-0"></i>Why Vaccinate</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Benefits of Pet Vaccination</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">Vaccinations are one of the most effective ways to protect your pet from serious diseases.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-shield-alt text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Disease Prevention</h3>
@@ -446,7 +508,7 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-400 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-pound-sign text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Cost-Effective Care</h3>
@@ -454,7 +516,7 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-users text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Herd Immunity</h3>
@@ -462,7 +524,7 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="400">
-          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-400 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-gavel text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Legal Compliance</h3>
@@ -470,7 +532,7 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="500">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-lungs text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Zoonotic Protection</h3>
@@ -478,7 +540,7 @@
         </div>
 
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="600">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <i class="fas fa-calendar-check text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Boarding & Travel</h3>
@@ -488,11 +550,33 @@
     </div>
   </section>
 
+  <!-- CTA Banner -->
+  <section class="py-20 lg:py-28 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400"></div>
+    <div class="absolute inset-0 bg-grid opacity-10"></div>
+    <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-brand-blue-300/20 rounded-full blur-3xl"></div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Start Your Pet's Vaccination Journey?</h2>
+      <p class="text-xl text-brand-blue-50/90 mb-10 max-w-2xl mx-auto">Protect your furry friend with our comprehensive vaccination programs. Our expert veterinarians provide safe, gentle immunizations tailored to your pet's needs.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#schedule" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
+          Schedule Vaccination
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7-7V3"/></svg>
+        </a>
+        <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-transparent text-white border-2 border-white font-semibold rounded-xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300">
+          Book a Consultation
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-        <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4"><i class="fas fa-question-circle mr-2"></i>FAQ</span>
+        <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4"><i class="fas fa-question-circle mr-2 rtl:ml-2 rtl:mr-0"></i>FAQ</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Frequently Asked Questions</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">Got questions about pet vaccinations? Find answers to common concerns below.</p>
       </div>
@@ -578,20 +662,24 @@
 
   <!-- CTA -->
   <section class="py-20 lg:py-28 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-500"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400"></div>
     <div class="absolute inset-0 bg-grid opacity-10"></div>
     <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-brand-blue-300/20 rounded-full blur-3xl"></div>
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Vaccinate Your Pet?</h2>
-      <p class="text-xl text-blue-50/90 mb-10 max-w-2xl mx-auto">Schedule your pet's vaccination appointment today. Our caring team is here to provide safe, gentle immunizations for your furry family members.</p>
+      <p class="text-xl text-brand-blue-50/90 mb-10 max-w-2xl mx-auto">Schedule your pet's vaccination appointment today. Our caring team is here to provide safe, gentle immunizations for your furry family members.</p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl shadow-2xl hover:-translate-y-1 transition-all duration-300">
+        <a href="#schedule" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
+          Schedule Vaccination
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+        <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
           Book Appointment
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
-        <a href="tel:+15551234567" class="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-semibold rounded-xl hover:bg-white/30 transition-all duration-300">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <a href="tel:+15551234567" class="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-semibold rounded-xl hover:bg-white/30 hover:-translate-y-1 transition-all duration-300">
+          <svg class="w-5 h-5 mr-2 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           Call Us Now
         </a>
       </div>
@@ -612,10 +700,10 @@
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
-  <script src="js/darkmode.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/darkmode.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
 

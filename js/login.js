@@ -28,12 +28,12 @@
   }
 
   function showError(element, errorEl) {
-    element.classList.add('border-red-500', 'dark:border-red-400');
+    element.classList.add('border-blue-500', 'dark:border-blue-400');
     errorEl.classList.remove('hidden');
   }
 
   function clearError(element, errorEl) {
-    element.classList.remove('border-red-500', 'dark:border-red-400');
+    element.classList.remove('border-blue-500', 'dark:border-blue-400');
     errorEl.classList.add('hidden');
   }
 

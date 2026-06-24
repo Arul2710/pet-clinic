@@ -38,7 +38,7 @@ class Navbar {
             label: 'Logout',
             href: '#',
             id: 'logoutBtn',
-            class: 'text-red-500 hover:text-red-400',
+            class: 'text-blue-500 hover:text-blue-400',
           },
         ]
       : [
@@ -78,7 +78,7 @@ class Navbar {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 md:h-20">
             <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group shrink-0" aria-label="PetClinic - Home">
-              <div class="w-10 h-10 md:w-11 md:h-11 bg-gradient-to-br from-blue-500 to-teal-400 rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+              <div class="w-10 h-10 md:w-11 md:h-11 bg-gradient-to-br from-blue-600 to-blue-400 rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <svg class="w-6 h-6 md:w-7 md:h-7 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <circle cx="12" cy="17" r="5" />
                   <circle cx="6" cy="10" r="2.2" />
@@ -87,7 +87,7 @@ class Navbar {
                   <circle cx="15" cy="4.5" r="2" />
                 </svg>
               </div>
-              <span class="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">PetClinic</span>
+              <span class="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">PetClinic</span>
             </a>
 
             <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse" id="desktopNav" role="menubar">
@@ -141,7 +141,7 @@ class Navbar {
 
                   <button id="ltrToggle" class="relative w-[68px] h-7 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-blue-500" aria-label="Switch to RTL" title="Switch to RTL">
                     <span class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
-                    <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 opacity-0 transition-opacity duration-300"></span>
+                    <span id="ltrToggleTrack" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 opacity-0 transition-opacity duration-300"></span>
                     <span class="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
                       <span id="ltrToggleLtr" class="transition-colors duration-300">LTR</span>
                       <span id="ltrToggleRtl" class="transition-colors duration-300">RTL</span>
@@ -232,7 +232,7 @@ class Navbar {
                 <span>Direction</span>
                 <span class="relative w-[68px] h-7 rounded-full pointer-events-none">
                   <span class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
-                  <span id="ltrToggleTrack-mob" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 opacity-0 transition-opacity duration-300"></span>
+                  <span id="ltrToggleTrack-mob" class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 opacity-0 transition-opacity duration-300"></span>
                   <span class="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
                     <span id="ltrToggleLtr-mob" class="transition-colors duration-300">LTR</span>
                     <span id="ltrToggleRtl-mob" class="transition-colors duration-300">RTL</span>

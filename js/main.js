@@ -62,9 +62,9 @@ function formatDate(date) {
 // Utility: show toast notification
 function showToast(message, type = 'success') {
   const colors = {
-    success: 'bg-green-500',
-    error: 'bg-red-500',
-    warning: 'bg-yellow-500',
+    success: 'bg-blue-500',
+    error: 'bg-blue-600',
+    warning: 'bg-blue-400',
     info: 'bg-blue-500'
   };
 

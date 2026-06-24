@@ -58,7 +58,7 @@
             <h3 class="font-bold text-gray-900 dark:text-white">${pet.name}</h3>
             <p class="text-xs text-gray-500 dark:text-gray-400">${pet.breed}</p>
           </div>
-          <span class="px-2.5 py-1 text-xs font-semibold rounded-full ${pet.status === 'Up to Date' ? 'bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-300' : 'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-600 dark:text-yellow-300'}">${pet.status}</span>
+          <span class="px-2.5 py-1 text-xs font-semibold rounded-full ${pet.status === 'Up to Date' ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300' : 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300'}">${pet.status}</span>
         </div>
         <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 text-sm">
           <div><span class="text-gray-500 dark:text-gray-400">Type:</span> <span class="font-medium text-gray-900 dark:text-white">${pet.type}</span></div>
@@ -78,8 +78,8 @@
   const tableBody = document.getElementById('vaccinationTableBody');
   if (tableBody) {
     const statusColors = {
-      'Up to Date': 'bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-300',
-      'Expired': 'bg-red-100 dark:bg-red-900/50 text-red-600 dark:text-red-300',
+      'Up to Date': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
+      'Expired': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
       'Upcoming': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300'
     };
     tableBody.innerHTML = vaccinations.map(v => `
@@ -97,8 +97,8 @@
   if (apptsContainer) {
     const typeColors = {
       'Vaccination Booster': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
-      'Annual Checkup': 'bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-300',
-      'Dental Cleaning': 'bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-300'
+      'Annual Checkup': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
+      'Dental Cleaning': 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300'
     };
     apptsContainer.innerHTML = appointments.map(a => `
       <div class="flex items-start gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
@@ -122,7 +122,7 @@
       <div class="p-3 rounded-lg bg-gray-50 dark:bg-gray-800/50 mb-3 last:mb-0">
         <div class="flex items-center justify-between mb-1">
           <span class="font-semibold text-sm text-gray-900 dark:text-white">${m.pet}</span>
-          <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-300">${m.status}</span>
+          <span class="px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300">${m.status}</span>
         </div>
         <p class="text-xs text-gray-500 font-mono">ID: ${m.chipId}</p>
         <p class="text-xs text-gray-400">Provider: ${m.company} | ${m.date}</p>
@@ -140,10 +140,10 @@
       allergy: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
     };
     const typeColors = {
-      checkup: 'bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-300',
+      checkup: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
       lab: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
-      dental: 'bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-300',
-      allergy: 'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-600 dark:text-yellow-300'
+      dental: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300',
+      allergy: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300'
     };
     healthContainer.innerHTML = healthReports.map(r => `
       <div class="glass-card rounded-xl p-4 card-hover">
@@ -167,7 +167,7 @@
   if (profileContainer) {
     profileContainer.innerHTML = `
       <div class="flex items-center gap-3 pb-3 border-b border-gray-100 dark:border-gray-700">
-        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-teal-400 flex items-center justify-center text-white font-bold text-lg">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center text-white font-bold text-lg">
           ${(user.name || 'U').charAt(0).toUpperCase()}
         </div>
         <div>
@@ -181,7 +181,7 @@
         <div class="flex justify-between"><span class="text-gray-500">Pet Type:</span><span class="font-medium text-gray-900 dark:text-white">${user.petType || 'Not set'}</span></div>
         <div class="flex justify-between"><span class="text-gray-500">Member Since:</span><span class="font-medium text-gray-900 dark:text-white">${new Date().getFullYear()}</span></div>
       </div>
-      <button id="logoutDashboardBtn" class="w-full mt-4 px-4 py-2.5 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-xl text-sm font-semibold hover:bg-red-100 dark:hover:bg-red-900/50 transition-all flex items-center justify-center gap-2">
+      <button id="logoutDashboardBtn" class="w-full mt-4 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl text-sm font-semibold hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-all flex items-center justify-center gap-2">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
         Logout
       </button>

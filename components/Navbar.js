@@ -182,7 +182,7 @@ export default function Navbar() {
               className="flex items-center gap-2 rtl:gap-reverse group shrink-0"
               aria-label="PetClinic - Home"
             >
-              <div className="w-10 h-10 md:w-11 md:h-11 bg-gradient-to-br from-blue-500 to-teal-400 rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+              <div className="w-10 h-10 md:w-11 md:h-11 bg-gradient-to-br from-blue-600 to-blue-400 rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <svg
                   className="w-6 h-6 md:w-7 md:h-7 text-white"
                   fill="currentColor"
@@ -196,7 +196,7 @@ export default function Navbar() {
                   <circle cx="15" cy="4.5" r="2" />
                 </svg>
               </div>
-              <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
+              <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
                 PetClinic
               </span>
             </Link>
@@ -285,7 +285,7 @@ export default function Navbar() {
                       <button
                         key={link.id}
                         onClick={handleLogout}
-                        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-red-500 dark:text-red-400 hover:text-red-600 dark:hover:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/30`}
+                        className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/30`}
                         role="menuitem"
                       >
                         {link.label}
@@ -350,7 +350,7 @@ export default function Navbar() {
                 title="Toggle direction"
               >
                 <span className="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-700"></span>
-                <span className={`absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 transition-opacity duration-300 ${dir === 'rtl' ? 'opacity-100' : 'opacity-0'}`}></span>
+                <span className={`absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 transition-opacity duration-300 ${dir === 'rtl' ? 'opacity-100' : 'opacity-0'}`}></span>
                 <span className="relative flex items-center justify-between px-2.5 h-full text-[10px] font-bold uppercase leading-none tracking-wide">
                   <span className={`transition-colors duration-300 ${dir === 'rtl' ? 'text-gray-400 dark:text-gray-500' : 'text-white'}`}>LTR</span>
                   <span className={`transition-colors duration-300 ${dir === 'rtl' ? 'text-white' : 'text-gray-400 dark:text-gray-500'}`}>RTL</span>
@@ -371,7 +371,7 @@ export default function Navbar() {
                       href={link.href}
                       className={`hidden sm:inline-flex items-center whitespace-nowrap px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                         link.label === 'Signup'
-                          ? 'bg-gradient-to-br from-blue-500 to-teal-400 text-white shadow-md hover:shadow-lg'
+                          ? 'bg-gradient-to-br from-blue-600 to-blue-400 text-white shadow-md hover:shadow-lg'
                           : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                       role="menuitem"
@@ -521,7 +521,7 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={handleLogout}
-                  className="block w-full text-left px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 text-red-500 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20"
+                  className="block w-full text-left px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200 text-blue-500 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
                   role="menuitem"
                 >
                   {link.label}

@@ -17,8 +17,18 @@
       theme: {
         extend: {
           colors: {
-            primary: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' },
-            accent: { 50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4', 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' },
+            'brand-blue': {
+              50: '#EFF6FF',
+              100: '#DBEAFE',
+              200: '#BFDBFE',
+              300: '#93C5FD',
+              400: '#60A5FA',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+              800: '#1E40AF',
+              900: '#1E3A8A',
+            },
           },
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
         }
@@ -30,15 +40,15 @@
     .glass-card { background: rgba(255,255,255,0.15); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.25); border-radius: 1rem; box-shadow: 0 8px 32px rgba(0,0,0,0.08); transition: all 0.4s ease; }
     .dark .glass-card { background: rgba(15,23,42,0.6); border-color: rgba(148,163,184,0.15); }
     .glass-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.14); }
-    .gradient-hero { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 30%, #3b82f6 60%, #0d9488 100%); }
-    .gradient-cta { background: linear-gradient(135deg, #2563eb 0%, #0d9488 50%, #5eead4 100%); }
-    .step-connector { position: absolute; top: 2.5rem; left: 50%; width: 100%; height: 2px; background: linear-gradient(90deg, #3b82f6, #0d9488); transform: translateX(0); }
-    .dark .step-connector { background: linear-gradient(90deg, #2563eb, #0d9488); }
+    .gradient-hero { background: linear-gradient(135deg, #2A0D17 0%, #A8335E 30%, #D24075 60%, #80B9BC 100%); }
+    .gradient-cta { background: linear-gradient(135deg, #A8335E 0%, #80B9BC 50%, #ACD2D3 100%); }
+    .step-connector { position: absolute; top: 2.5rem; left: 50%; width: 100%; height: 2px; background: linear-gradient(90deg, #D24075, #80B9BC); transform: translateX(0); }
+    .dark .step-connector { background: linear-gradient(90deg, #A8335E, #80B9BC); }
     @media (max-width: 767px) { .step-connector { display: none; } }
     .story-quote { quotes: "œ" "" "˜" "™"; }
-    .story-quote::before { content: open-quote; font-size: 2rem; line-height: 0.5; vertical-align: -0.3em; color: #3b82f6; }
-    .story-quote::after { content: close-quote; font-size: 2rem; line-height: 0.5; vertical-align: -0.1em; color: #3b82f6; }
-    .microchip-glow { box-shadow: 0 0 20px rgba(59,130,246,0.3); }
+    .story-quote::before { content: open-quote; font-size: 2rem; line-height: 0.5; vertical-align: -0.3em; color: #D24075; }
+    .story-quote::after { content: close-quote; font-size: 2rem; line-height: 0.5; vertical-align: -0.1em; color: #D24075; }
+    .microchip-glow { box-shadow: 0 0 20px rgba(210,64,117,0.3); }
     .progress-step.active .progress-dot { background: #3b82f6; box-shadow: 0 0 0 4px rgba(59,130,246,0.2); }
     .progress-step.completed .progress-dot { background: #2563eb; }
     .progress-dot { width: 16px; height: 16px; border-radius: 50%; background: #d1d5db; transition: all 0.4s ease; }
@@ -63,13 +73,13 @@
       class="w-full h-full object-cover"
     />
     <!-- Glassmorphism Gradient & Dark Tint Box -->
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-blue-950/85 to-teal-950/90 mix-blend-multiply"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-blue-950/85 to-blue-950/90 mix-blend-multiply"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
   </div>
 
   <!-- Decorative Premium Light Orbs -->
   <div class="absolute inset-0 pointer-events-none z-10 overflow-hidden">
-    <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>
   </div>
 
@@ -78,13 +88,13 @@
     <div class="max-w-4xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
       
       <!-- Top Accent Badge -->
-      <span class="inline-flex items-center px-4 py-2 bg-white/10 text-teal-300 text-xs sm:text-sm font-semibold rounded-full mb-6 backdrop-blur-md border border-white/10 shadow-lg tracking-wide animate-pulse">
-        <i class="fas fa-microchip mr-2 text-teal-400"></i>Permanent Pet Identification
+      <span class="inline-flex items-center px-4 py-2 bg-white/10 text-blue-300 text-xs sm:text-sm font-semibold rounded-full mb-6 backdrop-blur-md border border-white/10 shadow-lg tracking-wide animate-pulse">
+        <i class="fas fa-microchip mr-2 rtl:ml-2 rtl:mr-0 text-blue-400"></i>Permanent Pet Identification
       </span>
       
       <!-- Main Grand Heading -->
       <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-        Microchipping <span class="bg-gradient-to-r from-blue-300 via-teal-300 to-teal-200 bg-clip-text text-transparent">Services</span>
+        Microchipping <span class="bg-gradient-to-r from-blue-300 via-blue-300 to-blue-200 bg-clip-text text-transparent">Services</span>
       </h1>
       
       <!-- Catchy Description -->
@@ -94,30 +104,30 @@
       
       <!-- Glassmorphism Highlight Micro Tag -->
       <div class="inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-5 py-3 mb-10 shadow-inner">
-        <i class="fas fa-info-circle text-teal-300 text-base sm:text-lg"></i>
+        <i class="fas fa-info-circle text-blue-300 text-base sm:text-lg"></i>
         <span class="text-slate-300 text-xs sm:text-sm font-medium">The Microchip micro-device is smaller than a single grain of rice</span>
       </div>
 
       <!-- Action Buttons Row -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-        <a href="#cta" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold rounded-xl shadow-xl shadow-teal-500/20 transition-all duration-300 hover:-translate-y-0.5">
+        <a href="#cta" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-bold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
           <i class="fas fa-calendar-check"></i> Book Microchipping
         </a>
         <a href="#process" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/15 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5">
-          <i class="fas fa-play-circle text-teal-400"></i> How It Works
+          <i class="fas fa-play-circle text-blue-400"></i> How It Works
         </a>
       </div>
       
       <!-- Bottom Highlight Stats/Badges -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto mt-16 pt-8 border-t border-white/10 text-slate-300/80 text-xs sm:text-sm">
         <div class="flex items-center justify-center gap-3 py-2 px-4 rounded-xl bg-white/5 border border-white/5">
-          <i class="fas fa-clock text-teal-400 text-base"></i> <span>Takes 2-3 seconds</span>
+          <i class="fas fa-clock text-blue-400 text-base"></i> <span>Takes 2-3 seconds</span>
         </div>
         <div class="flex items-center justify-center gap-3 py-2 px-4 rounded-xl bg-white/5 border border-white/5">
-          <i class="fas fa-shield-alt text-teal-400 text-base"></i> <span>Lifetime registration</span>
+          <i class="fas fa-shield-alt text-blue-400 text-base"></i> <span>Lifetime registration</span>
         </div>
         <div class="flex items-center justify-center gap-3 py-2 px-4 rounded-xl bg-white/5 border border-white/5">
-          <i class="fas fa-paw text-teal-400 text-base"></i> <span>All pets welcome</span>
+          <i class="fas fa-paw text-blue-400 text-base"></i> <span>All pets welcome</span>
         </div>
       </div>
 
@@ -131,25 +141,25 @@
   <section id="process" class="py-20 lg:py-28 bg-white dark:bg-slate-800 relative">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-        <span class="text-primary-600 dark:text-primary-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-microchip mr-2"></i>Simple Process</span>
+        <span class="text-brand-blue-600 dark:text-brand-blue-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-microchip mr-2 rtl:ml-2 rtl:mr-0"></i>Simple Process</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">How Microchipping Works</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">Quick, painless, and over before you know it — here is the simple process we follow.</p>
       </div>
 
       <div class="relative">
         <!-- Progress Tracking Line Container (Centered exactly behind icons) -->
-        <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-1 bg-primary-200 dark:bg-primary-900 rounded-full -translate-y-1/2 z-0">
-          <div class="absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-primary-500 to-primary-400 rounded-full transition-all duration-500 ease-out" id="progress-bar"></div>
+        <div class="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-1 bg-brand-blue-200 dark:bg-brand-blue-900 rounded-full -translate-y-1/2 z-0">
+          <div class="absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-brand-blue-500 to-brand-blue-400 rounded-full transition-all duration-500 ease-out" id="progress-bar"></div>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-6 lg:gap-8 relative z-10">
+        <div class="grid md:grid-cols-4 gap-6 lg:gap-8 relative z-10" dir="auto">
           <!-- Step 1 -->
           <div class="process-step relative text-center" data-step="1" data-aos="fade-up" data-aos-delay="0">
             <div class="relative inline-flex items-center justify-center mb-6">
-              <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 flex items-center justify-center text-primary-600 dark:text-primary-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
+              <div class="w-16 h-16 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/50 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
                 <i class="fas fa-clipboard-list"></i>
               </div>
-              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 text-white text-xs font-bold flex items-center justify-center shadow-md">1</span>
+              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-brand-blue-500 text-white text-xs font-bold flex items-center justify-center shadow-md">1</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Consultation</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">We discuss your pet's health history and answer any questions you have about the procedure.</p>
@@ -158,10 +168,10 @@
           <!-- Step 2 -->
           <div class="process-step relative text-center" data-step="2" data-aos="fade-up" data-aos-delay="150">
             <div class="relative inline-flex items-center justify-center mb-6">
-              <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 flex items-center justify-center text-primary-600 dark:text-primary-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
+              <div class="w-16 h-16 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/50 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
                 <i class="fas fa-syringe"></i>
               </div>
-              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 text-white text-xs font-bold flex items-center justify-center shadow-md">2</span>
+              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-brand-blue-500 text-white text-xs font-bold flex items-center justify-center shadow-md">2</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Quick Implant</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">The microchip is injected between the shoulder blades — it takes just 2-3 seconds, like a routine vaccination.</p>
@@ -170,10 +180,10 @@
           <!-- Step 3 -->
           <div class="process-step relative text-center" data-step="3" data-aos="fade-up" data-aos-delay="300">
             <div class="relative inline-flex items-center justify-center mb-6">
-              <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 flex items-center justify-center text-primary-600 dark:text-primary-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
+              <div class="w-16 h-16 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/50 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
                 <i class="fas fa-check-double"></i>
               </div>
-              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 text-white text-xs font-bold flex items-center justify-center shadow-md">3</span>
+              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-brand-blue-500 text-white text-xs font-bold flex items-center justify-center shadow-md">3</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Scan &amp; Verify</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">We scan the chip to confirm it's reading correctly and record the unique ID number in your pet's file.</p>
@@ -182,10 +192,10 @@
           <!-- Step 4 -->
           <div class="process-step relative text-center" data-step="4" data-aos="fade-up" data-aos-delay="450">
             <div class="relative inline-flex items-center justify-center mb-6">
-              <div class="w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 flex items-center justify-center text-primary-600 dark:text-primary-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
+              <div class="w-16 h-16 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/50 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-2xl font-bold border-4 border-white dark:border-slate-800 shadow-lg microchip-glow transition-all duration-300 step-icon">
                 <i class="fas fa-globe"></i>
               </div>
-              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 text-white text-xs font-bold flex items-center justify-center shadow-md">4</span>
+              <span class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-brand-blue-500 text-white text-xs font-bold flex items-center justify-center shadow-md">4</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Registration</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">We register your pet's chip in a national database with your contact info — active for life.</p>
@@ -195,8 +205,8 @@
 
       <div class="mt-12 text-center" data-aos="fade-up">
         <div class="glass-card inline-flex items-center gap-3 px-6 py-4">
-          <i class="fas fa-stopwatch text-primary-500 text-xl"></i>
-          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">The entire appointment takes about <strong class="text-primary-600 dark:text-primary-400">10-15 minutes</strong> from start to finish.</span>
+          <i class="fas fa-stopwatch text-brand-blue-500 text-xl"></i>
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">The entire appointment takes about <strong class="text-brand-blue-600 dark:text-brand-blue-400">10-15 minutes</strong> from start to finish.</span>
         </div>
       </div>
     </div>
@@ -238,9 +248,9 @@
         steps.forEach((step, idx) => {
           const iconContainer = step.querySelector('.step-icon');
           if (idx < maxStepVisible) {
-            iconContainer.classList.add('ring-4', 'ring-primary-400/30', 'scale-105');
+            iconContainer.classList.add('ring-4', 'ring-brand-blue-400/30', 'scale-105');
           } else {
-            iconContainer.classList.remove('ring-4', 'ring-primary-400/30', 'scale-105');
+            iconContainer.classList.remove('ring-4', 'ring-brand-blue-400/30', 'scale-105');
           }
         });
       }, observerOptions);
@@ -258,13 +268,13 @@
 <section id="benefits" class="py-20 lg:py-28 relative overflow-hidden bg-gray-50 dark:bg-slate-900">
   <!-- Premium Subtle Gradients & Art Background Layout -->
   <div class="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-850 dark:to-slate-900 -z-10"></div>
-  <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-400/10 dark:bg-primary-500/5 rounded-full blur-3xl -z-10"></div>
-  <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-400/10 dark:bg-teal-500/5 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-blue-400/10 dark:bg-brand-blue-500/5 rounded-full blur-3xl -z-10"></div>
+  <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-400/10 dark:bg-blue-500/5 rounded-full blur-3xl -z-10"></div>
 
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 font-semibold text-xs uppercase tracking-widest">
-        <span class="w-1.5 h-1.5 rounded-full bg-primary-500 animate-pulse"></span>Why Microchip?
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue-50 dark:bg-brand-blue-900/30 text-brand-blue-600 dark:text-brand-blue-400 font-semibold text-xs uppercase tracking-widest">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-blue-500 animate-pulse"></span>Why Microchip?
       </span>
       <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-4 text-slate-800 dark:text-white tracking-tight">
         Benefits of Microchipping Your Pet
@@ -282,10 +292,10 @@
         <div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
           <img src="assets/images/Microchipping 1.jpg" alt="Permanent ID" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-primary-500 rounded-md backdrop-blur-sm">Lifetime Secure</span>
+          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-brand-blue-500 rounded-md backdrop-blur-sm">Lifetime Secure</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">Permanent ID</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">Permanent ID</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Unlike collars or tags that can fall off or be removed, a microchip is a permanent form of identification that stays with your pet for life.</p>
         </div>
       </div>
@@ -295,10 +305,10 @@
         <div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
           <img src="assets/images/Microchipping 2.jpg" alt="Safe &amp; Painless" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-teal-500 rounded-md backdrop-blur-sm">Painless Vet Care</span>
+          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-blue-500 rounded-md backdrop-blur-sm">Painless Vet Care</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">Safe &amp; Painless</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">Safe &amp; Painless</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">The procedure is no more uncomfortable than a routine vaccination. No anesthesia needed, and your pet can resume normal activities immediately.</p>
         </div>
       </div>
@@ -311,7 +321,7 @@
           <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-blue-500 rounded-md backdrop-blur-sm">Fast Recovery</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">Reunites Families</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">Reunites Families</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Shelters and vets scan lost pets for microchips. A registered chip means you'll be contacted quickly if your pet is found — day or night.</p>
         </div>
       </div>
@@ -321,10 +331,10 @@
         <div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
           <img src="assets/images/Microchipping 4.jpg" alt="Global Database" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-teal-500 rounded-md backdrop-blur-sm">National Network</span>
+          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-blue-500 rounded-md backdrop-blur-sm">National Network</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">Global Database</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">Global Database</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Our chips are registered in a nationwide database accessible by vets, shelters, and animal control across the country.</p>
         </div>
       </div>
@@ -337,7 +347,7 @@
           <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-blue-500 rounded-md backdrop-blur-sm">Affordable Protection</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">One-Time Cost</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">One-Time Cost</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Pay once, and the chip lasts your pet's entire lifetime. There are no annual fees or renewal charges for the chip itself.</p>
         </div>
       </div>
@@ -347,10 +357,10 @@
         <div class="relative h-48 overflow-hidden bg-slate-100 dark:bg-slate-800">
           <img src="assets/images/Microchipping 6.jpg" alt="Legal Proof" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-teal-500 rounded-md backdrop-blur-sm">Verified Owner</span>
+          <span class="absolute bottom-3 left-4 px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-blue-500 rounded-md backdrop-blur-sm">Verified Owner</span>
         </div>
         <div class="p-6 lg:p-8">
-          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-primary-500 transition-colors duration-300">Legal Proof of Ownership</h3>
+          <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white group-hover:text-brand-blue-500 transition-colors duration-300">Legal Proof of Ownership</h3>
           <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">A microchip registered in your name serves as proof of ownership in dispute cases — protecting your bond with your pet.</p>
         </div>
       </div>
@@ -361,11 +371,11 @@
     <div class="mt-16 text-center" data-aos="fade-up">
       <div class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-slate-50 dark:bg-slate-850 border border-slate-150 dark:border-slate-800 shadow-sm">
         <span class="flex h-3 w-3 relative">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-primary-500"></span>
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-blue-500"></span>
         </span>
         <span class="text-sm font-medium text-slate-700 dark:text-slate-300">
-          <strong class="text-primary-600 dark:text-primary-400 font-bold">99%</strong> of shelters scan for microchips — make sure your pet is counted.
+          <strong class="text-brand-blue-600 dark:text-brand-blue-400 font-bold">99%</strong> of shelters scan for microchips — make sure your pet is counted.
         </span>
       </div>
     </div>
@@ -374,11 +384,11 @@
 
   <!-- ===================== SECTION 4: SAFETY ===================== -->
   <section id="safety" class="py-20 lg:py-28 bg-white dark:bg-slate-800 relative">
-    <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 dark:bg-primary-900/20 rounded-full blur-3xl -z-10"></div>
-    <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent-100 dark:bg-accent-900/20 rounded-full blur-3xl -z-10"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue-100 dark:bg-brand-blue-900/20 rounded-full blur-3xl -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-blue-100 dark:bg-brand-blue-900/20 rounded-full blur-3xl -z-10"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-        <span class="text-primary-600 dark:text-primary-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-shield-alt mr-2"></i>Peace of Mind</span>
+        <span class="text-brand-blue-600 dark:text-brand-blue-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-shield-alt mr-2 rtl:ml-2 rtl:mr-0"></i>Peace of Mind</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">Is Microchipping Safe?</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">Absolutely. Microchipping is one of the safest veterinary procedures performed worldwide.</p>
       </div>
@@ -389,7 +399,7 @@
         </div>
         <div class="space-y-6" data-aos="fade-left">
           <div class="glass-card p-6 flex items-start gap-4 hover-lift">
-            <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 text-xl flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-xl flex-shrink-0">
               <i class="fas fa-check-circle"></i>
             </div>
             <div>
@@ -399,7 +409,7 @@
           </div>
 
           <div class="glass-card p-6 flex items-start gap-4 hover-lift">
-            <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 text-xl flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-xl flex-shrink-0">
               <i class="fas fa-syringe"></i>
             </div>
             <div>
@@ -409,7 +419,7 @@
           </div>
 
           <div class="glass-card p-6 flex items-start gap-4 hover-lift">
-            <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 text-xl flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-xl flex-shrink-0">
               <i class="fas fa-ban"></i>
             </div>
             <div>
@@ -419,7 +429,7 @@
           </div>
 
           <div class="glass-card p-6 flex items-start gap-4 hover-lift">
-            <div class="w-12 h-12 rounded-lg bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 text-xl flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 text-xl flex-shrink-0">
               <i class="fas fa-database"></i>
             </div>
             <div>
@@ -431,7 +441,7 @@
       </div>
 
       <div class="mt-12 glass-card p-8 text-center max-w-3xl mx-auto" data-aos="fade-up">
-        <div class="flex items-center justify-center gap-2 text-primary-600 dark:text-primary-400 mb-2">
+        <div class="flex items-center justify-center gap-2 text-brand-blue-600 dark:text-brand-blue-400 mb-2">
           <i class="fas fa-quote-left text-2xl"></i>
         </div>
         <p class="text-lg text-gray-700 dark:text-gray-300 font-medium italic leading-relaxed">
@@ -447,7 +457,7 @@
     <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-slate-800 dark:to-slate-900 -z-10"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-        <span class="text-primary-600 dark:text-primary-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-heart mr-2"></i>Happy Reunions</span>
+        <span class="text-brand-blue-600 dark:text-brand-blue-400 font-semibold text-sm uppercase tracking-widest"><i class="fas fa-heart mr-2 rtl:ml-2 rtl:mr-0"></i>Happy Reunions</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">Real Reunions Made Possible by Microchips</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">Every year, millions of lost pets are reunited with their families ” thanks to a tiny microchip.</p>
       </div>
@@ -458,12 +468,12 @@
             <img src="assets/images/photo-1544568100-847a948585b9.jpg" alt="Happy golden retriever" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <span class="absolute bottom-3 left-3 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold border border-white/20">
-              <i class="fas fa-dog mr-1"></i> Dog
+              <i class="fas fa-dog mr-1 rtl:ml-1 rtl:mr-0"></i> Dog
             </span>
           </div>
           <div class="p-6">
             <div class="flex items-center gap-2 mb-3">
-              <i class="fas fa-map-pin text-primary-500 text-sm"></i>
+              <i class="fas fa-map-pin text-brand-blue-500 text-sm"></i>
               <span class="text-xs text-gray-500 dark:text-gray-400 font-medium">Austin, TX ” 2 years after chipping</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Bailey's 1,200-Mile Journey Home</h3>
@@ -471,12 +481,12 @@
             Bailey escaped from her backyard during a storm and was found over 1,200 miles away in another state.  He was picked up by animal A shelter scanned her microchip and called us within hours. We never thought we would see her again each other.
             </p>
             <div class="flex items-center gap-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold text-sm">SM</div>
+              <div class="w-10 h-10 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 font-bold text-sm">SM</div>
               <div>
                 <p class="text-sm font-semibold">Sarah &amp; Mike</p>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Bailey's family</p>
               </div>
-              <i class="fas fa-heart text-red-400 ml-auto"></i>
+              <i class="fas fa-heart text-blue-400 ml-auto rtl:mr-auto rtl:ml-0"></i>
             </div>
           </div>
         </div>
@@ -486,12 +496,12 @@
             <img src="assets/images/photo-1574158622682-e40e69881006.jpg" alt="Orange cat looking up" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <span class="absolute bottom-3 left-3 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold border border-white/20">
-              <i class="fas fa-cat mr-1"></i> Cat
+              <i class="fas fa-cat mr-1 rtl:ml-1 rtl:mr-0"></i> Cat
             </span>
           </div>
           <div class="p-6">
             <div class="flex items-center gap-2 mb-3">
-              <i class="fas fa-map-pin text-primary-500 text-sm"></i>
+              <i class="fas fa-map-pin text-brand-blue-500 text-sm"></i>
               <span class="text-xs text-gray-500 dark:text-gray-400 font-medium">Portland, OR ” 3 weeks after chipping</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Oliver Came Home for Christmas</h3>
@@ -499,12 +509,12 @@
               Oliver slipped out the door when we had guests over. We searched for weeks with no luck. Three weeks later, a vet clinic 8 miles away called ” someone had brought him in after finding him in their garage. His microchip led us right back to each other.
             </p>
             <div class="flex items-center gap-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold text-sm">JL</div>
+              <div class="w-10 h-10 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 font-bold text-sm">JL</div>
               <div>
                 <p class="text-sm font-semibold">Jessica L.</p>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Oliver's owner</p>
               </div>
-              <i class="fas fa-heart text-red-400 ml-auto"></i>
+              <i class="fas fa-heart text-blue-400 ml-auto rtl:mr-auto rtl:ml-0"></i>
             </div>
           </div>
         </div>
@@ -514,12 +524,12 @@
             <img src="assets/images/photo-1583511655857-d19b40a7a54e.jpg" alt="Small dog peeking over blanket" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <span class="absolute bottom-3 left-3 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-semibold border border-white/20">
-              <i class="fas fa-dog mr-1"></i> Dog
+              <i class="fas fa-dog mr-1 rtl:ml-1 rtl:mr-0"></i> Dog
             </span>
           </div>
           <div class="p-6">
             <div class="flex items-center gap-2 mb-3">
-              <i class="fas fa-map-pin text-primary-500 text-sm"></i>
+              <i class="fas fa-map-pin text-brand-blue-500 text-sm"></i>
               <span class="text-xs text-gray-500 dark:text-gray-400 font-medium">Denver, CO ” 5 days after chipping</span>
             </div>
             <h3 class="text-xl font-bold mb-2">Pepper's 5-Day Adventure</h3>
@@ -527,12 +537,12 @@
               We had just microchipped Pepper the week before he escaped through a gap in the fence. He was picked up by animal control, scanned, and we got the call in under an hour. If we had waited another week to chip him, we might never have gotten him back.
             </p>
             <div class="flex items-center gap-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-              <div class="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center text-primary-600 dark:text-primary-400 font-bold text-sm">TR</div>
+              <div class="w-10 h-10 rounded-full bg-brand-blue-100 dark:bg-brand-blue-900/40 flex items-center justify-center text-brand-blue-600 dark:text-brand-blue-400 font-bold text-sm">TR</div>
               <div>
                 <p class="text-sm font-semibold">Tom &amp; Rachel</p>
                 <p class="text-xs text-gray-500 dark:text-gray-400">Pepper's family</p>
               </div>
-              <i class="fas fa-heart text-red-400 ml-auto"></i>
+              <i class="fas fa-heart text-blue-400 ml-auto rtl:mr-auto rtl:ml-0"></i>
             </div>
           </div>
         </div>
@@ -540,8 +550,8 @@
 
       <div class="mt-12 text-center" data-aos="fade-up">
         <div class="glass-card inline-flex items-center gap-3 px-6 py-4">
-          <i class="fas fa-microchip text-primary-500"></i>
-          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Microchipped pets are <strong class="text-primary-600 dark:text-primary-400">up to 20x more likely</strong> to be reunited with their owners.</span>
+          <i class="fas fa-microchip text-brand-blue-500"></i>
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Microchipped pets are <strong class="text-brand-blue-600 dark:text-brand-blue-400">up to 20x more likely</strong> to be reunited with their owners.</span>
         </div>
       </div>
     </div>
@@ -551,12 +561,12 @@
   <section id="cta" class="py-20 lg:py-28 gradient-cta relative overflow-hidden">
     <div class="absolute inset-0 opacity-15">
       <div class="absolute top-5 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute bottom-5 right-1/4 w-80 h-80 bg-teal-300 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-5 right-1/4 w-80 h-80 bg-blue-300 rounded-full blur-3xl"></div>
     </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in" data-aos-duration="800">
         <span class="inline-block px-4 py-1.5 bg-white/25 text-white text-sm font-semibold rounded-full mb-4 backdrop-blur-sm border border-white/20">
-          <i class="fas fa-calendar-alt mr-2"></i>Book an Appointment
+          <i class="fas fa-calendar-alt mr-2 rtl:ml-2 rtl:mr-0"></i>Book an Appointment
         </span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
           Give Your Pet the Gift of <span class="text-blue-900">Lifetime Protection</span>
@@ -581,11 +591,11 @@
         </div>
 
         <div class="flex flex-wrap justify-center gap-4">
-          <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 hover:text-blue-800 font-bold rounded-xl shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+          <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-bold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
             <i class="fas fa-calendar-check"></i> Book Now
           </a>
-          <a href="tel:+1234567890" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-900/30 hover:bg-blue-900/40 text-white font-semibold rounded-xl border border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105">
-            <i class="fas fa-phone-alt"></i> Call (123) 456-7890
+          <a href="tel:+15551234567" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-900/30 hover:bg-blue-900/40 text-white font-semibold rounded-xl border border-white/30 backdrop-blur-sm transition-all duration-300 hover:scale-105">
+            <i class="fas fa-phone"></i> Call +1 (555) 123-4567
           </a>
         </div>
 
@@ -603,16 +613,16 @@
   <div id="footer"></div>
 
   <!-- Floating Back to Top -->
-  <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 invisible scale-75 z-50" aria-label="Back to top">
+  <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-brand-blue-600 hover:bg-brand-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 opacity-0 invisible scale-75 z-50" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
 
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/darkmode.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/footer.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/darkmode.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/main.js" defer></script>
   <script>
     AOS.init({ once: true, duration: 800, offset: 100 });
 
