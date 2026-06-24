@@ -21,6 +21,20 @@
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
             display: ['Plus Jakarta Sans', 'sans-serif']
+          },
+          colors: {
+            'brand-blue': {
+              50: '#EFF6FF',
+              100: '#DBEAFE',
+              200: '#BFDBFE',
+              300: '#93C5FD',
+              400: '#60A5FA',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+              800: '#1E40AF',
+              900: '#1E3A8A',
+            },
           }
         }
       }
@@ -35,31 +49,31 @@
 <section class="relative min-h-screen flex items-center overflow-hidden pt-16 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/home1-1.jpg');">
   
   <!-- Premium Background Overlays for High Readability -->
-  <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/55 to-blue-700/25 dark:from-slate-900/95 dark:via-blue-950/90 dark:to-blue-950/80"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-brand-blue-900/90 via-brand-blue-800/55 to-brand-blue-700/25 dark:from-slate-900/95 dark:via-brand-blue-900/90 dark:to-brand-blue-900/80"></div>
   <div class="absolute inset-0 bg-grid opacity-10"></div>
   
   <!-- Glassmorphism Glowing Orbs -->
-  <div class="absolute top-20 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+  <div class="absolute top-20 left-1/4 rtl:right-1/4 rtl:left-auto w-72 h-72 bg-brand-blue-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-20 right-1/4 rtl:left-1/4 rtl:right-auto w-96 h-96 bg-brand-blue-400/10 rounded-full blur-3xl"></div>
 
   <!-- Content Container -->
   <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center flex flex-col items-center justify-center z-10">
     
     <!-- Main Heading -->
     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 max-w-4xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-      Expert Pet <span class="text-blue-300 relative   after:-z-10">Vaccination</span> & Microchipping Services
+      Expert Pet <span class="text-brand-blue-300 relative   after:-z-10">Vaccination</span> & Microchipping Services
     </h1>
 
     <!-- Subtitle (Content Concise) -->
-    <p class="text-lg sm:text-xl text-blue-50/90 mb-10 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <p class="text-lg sm:text-xl text-brand-blue-50/90 mb-10 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
       Professional vaccination programs and safe microchipping by certified experts. Giving your beloved pets the premium healthcare they truly deserve.
     </p>
 
     <!-- CTAs / Buttons -->
     <div class="flex flex-wrap gap-4 justify-center mb-14" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-      <a href="vaccination.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
+      <a href="vaccination.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-brand-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-blue-600/30 transition-all duration-300 btn-primary">
         Book Vaccination
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-5 h-5 ml-2 rtl:mr-2 rtl:ml-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
         </svg>
       </a>
@@ -93,27 +107,27 @@
   <section class="py-20 lg:py-28 bg-white dark:bg-gray-800/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-        <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">Why Choose Us</span>
+        <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">Why Choose Us</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Why Pet Owners Trust Our Clinic</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">We provide the highest standard of veterinary care with compassion, expertise, and dedication to your pet's well-being.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Certified Veterinarians</h3>
           <p class="text-gray-600 dark:text-gray-400">Our team consists of licensed, experienced veterinarians dedicated to your pet's health.</p>
         </div>
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Modern Equipment</h3>
           <p class="text-gray-600 dark:text-gray-400">State-of-the-art diagnostic and treatment equipment for accurate and effective care.</p>
         </div>
         <div class="glass-card rounded-2xl p-8 text-center card-hover" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-blue-600 to-brand-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Compassionate Care</h3>
@@ -127,42 +141,42 @@
   <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-        <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">Our Services</span>
+        <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">Our Services</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Comprehensive Pet Healthcare Services</h2>
         <p class="text-gray-600 dark:text-gray-400 text-lg">From vaccinations to microchipping, we offer a complete range of veterinary services.</p>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <a href="vaccination.html" class="group glass-card rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div class="w-14 h-14 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-7 h-7 text-brand-blue-600 dark:text-brand-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Vaccinations</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Complete vaccination schedules for dogs and cats.</p>
-          <span class="text-blue-600 dark:text-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
+          <span class="text-brand-blue-600 dark:text-brand-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
         </a>
         <a href="microchipping.html" class="group glass-card rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          <div class="w-14 h-14 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-7 h-7 text-brand-blue-600 dark:text-brand-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Microchipping</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Permanent identification for your pet's safety.</p>
-          <span class="text-blue-600 dark:text-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
+          <span class="text-brand-blue-600 dark:text-brand-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
         </a>
         <a href="petcare.html" class="group glass-card rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <div class="w-14 h-14 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-7 h-7 text-brand-blue-600 dark:text-brand-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Health Checkups</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Regular wellness exams and preventive care.</p>
-          <span class="text-blue-600 dark:text-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
+          <span class="text-brand-blue-600 dark:text-brand-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
         </a>
         <a href="petcare.html#emergency" class="group glass-card rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="400">
-          <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-            <svg class="w-7 h-7 text-blue-600 dark:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+          <div class="w-14 h-14 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-7 h-7 text-brand-blue-600 dark:text-brand-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Emergency Care</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">24/7 emergency veterinary services preventive care.</p>
-          <span class="text-blue-600 dark:text-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
+          <span class="text-brand-blue-600 dark:text-brand-blue-400 text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">Learn More <span>&rarr;</span></span>
         </a>
       </div>
     </div>
@@ -176,30 +190,30 @@
           <img src="assets/images/photo-1601758228041-f3b2795255f1.jpg" alt="Pet vaccination" class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
         </div>
         <div data-aos="fade-left">
-          <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">Why Vaccinate?</span>
+          <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">Why Vaccinate?</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">Benefits of Pet Vaccination</h2>
           <div class="space-y-4">
             <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
-                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div class="w-8 h-8 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
+                <svg class="w-4 h-4 text-brand-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
               <div><h4 class="font-semibold text-gray-900 dark:text-white">Prevents Deadly Diseases</h4><p class="text-sm text-gray-600 dark:text-gray-400">Protects against rabies, distemper, parvovirus, and more.</p></div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
-                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div class="w-8 h-8 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
+                <svg class="w-4 h-4 text-brand-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
               <div><h4 class="font-semibold text-gray-900 dark:text-white">Herd Immunity</h4><p class="text-sm text-gray-600 dark:text-gray-400">Protects the broader pet community from outbreaks.</p></div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
-                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div class="w-8 h-8 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
+                <svg class="w-4 h-4 text-brand-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
               <div><h4 class="font-semibold text-gray-900 dark:text-white">Cost-Effective</h4><p class="text-sm text-gray-600 dark:text-gray-400">Prevents costly treatments for preventable diseases.</p></div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
-                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <div class="w-8 h-8 bg-brand-blue-100 dark:bg-brand-blue-900/50 rounded-full flex items-center justify-center shrink-0 mt-1">
+                <svg class="w-4 h-4 text-brand-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
               </div>
               <div><h4 class="font-semibold text-gray-900 dark:text-white">Legal Requirement</h4><p class="text-sm text-gray-600 dark:text-gray-400">Rabies vaccination is mandatory in most regions.</p></div>
             </div>
@@ -213,18 +227,18 @@
   <section class="py-20 lg:py-28 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-        <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium mb-4">Testimonials</span>
+        <span class="inline-block px-4 py-2 bg-brand-blue-100 dark:bg-brand-blue-900/50 text-brand-blue-600 dark:text-brand-blue-300 rounded-full text-sm font-medium mb-4">Testimonials</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">What Pet Owners Say</h2>
       </div>
       <div class="relative" data-aos="fade-up">
         <div class="testimonial-slider flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory" id="testimonialSlider">
           <div class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] glass-card rounded-2xl p-8">
             <div class="flex items-center gap-2 mb-4">
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             </div>
             <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Excellent service! The team was so gentle with my Labrador. Vaccination was quick and painless. Highly recommend this clinic."</p>
             <div class="flex items-center gap-4">
@@ -234,9 +248,9 @@
           </div>
           <div class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] glass-card rounded-2xl p-8">
             <div class="flex items-center gap-2 mb-4">
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             </div>
             <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Got my cat microchipped here. The process was explained thoroughly and done professionally. Peace of mind knowing my pet is safe."</p>
             <div class="flex items-center gap-4">
@@ -246,8 +260,8 @@
           </div>
           <div class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] glass-card rounded-2xl p-8">
             <div class="flex items-center gap-2 mb-4">
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-brand-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
             </div>
             <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Regular checkups at this clinic have kept my dog healthy for years. The vets are knowledgeable and genuinely care about animals."</p>
             <div class="flex items-center gap-4">
@@ -257,10 +271,10 @@
           </div>
         </div>
         <div class="flex justify-center gap-3 mt-8">
-          <button class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all" onclick="document.getElementById('testimonialSlider').scrollBy({left: -400, behavior: 'smooth'})">
+          <button class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center hover:bg-brand-blue-500 hover:text-white transition-all" onclick="scrollSlider(-400)">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           </button>
-          <button class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all" onclick="document.getElementById('testimonialSlider').scrollBy({left: 400, behavior: 'smooth'})">
+          <button class="w-10 h-10 rounded-full bg-white dark:bg-gray-800 shadow-md flex items-center justify-center hover:bg-brand-blue-500 hover:text-white transition-all" onclick="scrollSlider(400)">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </button>
         </div>
@@ -270,17 +284,17 @@
 
   <!-- Appointment CTA -->
   <section class="py-20 lg:py-28 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400"></div>
     <div class="absolute inset-0 bg-grid opacity-10"></div>
-    <div class="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-10 left-10 rtl:right-10 rtl:left-auto w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 rtl:left-10 rtl:right-auto w-80 h-80 bg-brand-blue-300/20 rounded-full blur-3xl"></div>
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Protect Your Pet?</h2>
       <p class="text-xl text-blue-50/90 mb-10 max-w-2xl mx-auto">Schedule a vaccination appointment or microchipping session today. Our team is ready to provide the best care for your furry friend.</p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-brand-blue-600 to-brand-blue-400 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/20 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30 transition-all duration-300 btn-primary">
           Book Appointment
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          <svg class="w-5 h-5 ml-2 rtl:mr-2 rtl:ml-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
         <a href="tel:+15551234567" class="inline-flex items-center px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-semibold rounded-xl hover:bg-white/30 transition-all duration-300">
           <svg class="w-5 h-5 mr-2 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -293,7 +307,14 @@
   <div id="footer"></div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    function scrollSlider(amount) {
+      const slider = document.getElementById('testimonialSlider');
+      const dir = document.documentElement.getAttribute('dir') || 'ltr';
+      slider.scrollBy({ left: dir === 'rtl' ? -amount : amount, behavior: 'smooth' });
+    }
+    AOS.init();
+  </script>
   <script src="js/darkmode.js" defer></script>
   <script src="js/navbar.js" defer></script>
   <script src="js/footer.js" defer></script>
